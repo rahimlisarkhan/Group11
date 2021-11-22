@@ -1,0 +1,58 @@
+/* Small Phone 332px
+Normal Phone 576px
+Tablet 768px
+Land Tablet  996px
+Desktop 1200px
+Big Desktop 1800px */
+
+
+@media screen and (min-width:1800px) {
+    .logo {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        background-color: coral;
+    }
+}
+
+
+/* Tablet screen */
+@media screen and (max-width:768px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .logo {
+        background-color: blue;
+    }
+    .content {
+        flex-direction: column;
+    }
+}
+
+
+/* Phone Screen */
+@media screen and (max-width:400px) {
+
+    /* css code */
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        background-color: green;
+    }
+    
+    /* .navbar img {
+        width: 250px;
+    } */
+
+}

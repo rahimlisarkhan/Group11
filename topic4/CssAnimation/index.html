@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .container {
+            background-color: blue;
+            height: 400px;
+            padding: 40px;
+        }
+
+        .box-1 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            /* background-color: yellow; */
+            transition: all 1s;
+            font-size: 35px;
+
+
+            border-top: 4px solid yellow;
+            border-right: 4px solid yellow;
+            border-left:none ;
+            border-bottom: none;
+            transform: rotate(45deg);
+
+            /* transform: rotate(45deg); */
+            /* transform: scale(1.2);       */
+            /* transform: translate(400px,100px); */
+            /* transform: rotateY(180px); */
+
+
+            /* animation: myAnimation 2s linear 0 infinite alternate; */
+
+
+            /* animation-name: myAnimation;
+            animation-duration: 4s; */
+            /* animation-delay: -2s; */
+            /* animation-timing-function: 4; */
+            /* animation-iteration-count: infinite;
+
+        }
+
+        /* .box-1:hover {
+            transform: scale(.95);
+            transform:skew(10deg) ;
+
+
+        } */
+        }
+
+        @keyframes myAnimation {
+
+            /* 0% {
+                top: 0;
+                left: 0;
+                transform: rotateY(0);
+
+            }
+
+            25% {
+                top: 0;
+                left: 200px;
+                transform: rotateY(40deg);
+
+            }
+
+            50% {
+                top: 200px;
+                left: 200px;
+                transform: rotateY(140deg);
+
+            }
+
+            75% {
+                top: 200px;
+                left: 0;
+                transform: rotateY(120deg);
+
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                transform: rotateY(0);
+
+            } */
+
+            /* Method 2 */
+            from {
+                left: 0;
+
+            }
+
+            to {
+                left: 100px;
+
+            }
+
+        }
+    </style>
+
+
+    <title>Css Animation</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box-1">
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Exspress Terminal</title>
+
+</head>
+
+<body class="bg-secondary">
+
+    <div class="container bg-light p-2">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron bg-warning text-white ">
+                    <h1 class="display-4 text-center">Exspress Terminal</h1>
+                    <p id="userNameTitle" class="lead text-center ">Hormetli <strong> John</strong> Exspress Banka xos gelmisiniz!</p>
+                    <hr class="my-4">
+                    <p id="balance-content" class="text-center h4 d-none">Sizin balans : 100₼</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="form-group d-flex flex-column">
+                    <label for="my-input" class="h5 text-center">Məbləği qeyd edin..</label>
+                    <div class="input-group mb-2">
+                        <input id="my-account" class="form-control" type="number">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">₼</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card p-2 shadow rounded">
+                    <div class="card-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOyuMq1Td59BWzuyYIdVa0g-NKxErDpVN41fBI4jnF3hkM9lNOLijnmLpon3RpRYioULE&usqp=CAU"
+                            class="img-fluid" style="object-fit:cover;" alt="">
+                        <h5 class="card-title text-uppercase">Ödəniş et </h5>
+                        <p class="card-text">Ekranda balansınızı görmək istəyirsinizsə sadəcə seçim edin</p>
+                        <button id="payBalance" class="btn btn-lg btn-outline-warning btn-block"> ödəniş et </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-2 shadow rounded">
+                    <div class="card-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOyuMq1Td59BWzuyYIdVa0g-NKxErDpVN41fBI4jnF3hkM9lNOLijnmLpon3RpRYioULE&usqp=CAU"
+                            class="img-fluid" style="object-fit:cover;" alt="">
+                        <h5 class="card-title text-uppercase">Hesabı artır</h5>
+                        <p class="card-text">Ekranda balansınızı görmək istəyirsinizsə sadəcə seçim edin</p>
+                        <button id="addBalance" class="btn btn-lg btn-outline-warning btn-block"> artır</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card p-2 shadow rounded">
+                    <div class="card-body">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOyuMq1Td59BWzuyYIdVa0g-NKxErDpVN41fBI4jnF3hkM9lNOLijnmLpon3RpRYioULE&usqp=CAU"
+                            class="img-fluid" style="object-fit:cover;" alt="">
+                        <h5 class="card-title text-uppercase">Balansı göstər</h5>
+                        <p class="card-text">Ekranda balansınızı görmək istəyirsinizsə sadəcə seçim edin</p>
+                        <button id="showBalance" class="btn-lg btn-outline-warning btn-block btn"> göstər</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+
+    <script src="./index.js"></script>
+
+</body>
+
+
+
+</html>
