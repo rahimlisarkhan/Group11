@@ -52,3 +52,37 @@
 // console.log(murad());
 // console.log(murad());
 // console.log(murad());
+// function SAyHello(){
+//     console.log('Hello');
+// }
+
+
+// window.onkeydown = function(){
+//     SAyHello()
+// }
+
+
+// function Counter (){
+//     let say = 0
+//     return function (){
+//         return say--
+//     }
+// }
+
+// var muradinSaygaci = Counter()
+
+// console.log(muradinSaygaci());
+// console.log(muradinSaygaci());
+// console.log(muradinSaygaci());
+// console.log(muradinSaygaci());
+// console.log(muradinSaygaci());
+
+// var akifinSaygaci = Counter()
+
+// console.log(akifinSaygaci());
+// console.log(akifinSaygaci());
+// console.log(akifinSaygaci());
+
+
+// console.log(muradinSaygaci());
+// console.log(muradinSaygaci());
