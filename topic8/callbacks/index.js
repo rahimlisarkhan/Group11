@@ -6,6 +6,7 @@
 //     return sum * 2;
 // }
 
+
 // function operationOnSum(num1, num2, operation) {
 //     var sum = num1 + num2;
 
@@ -59,3 +60,55 @@
 // //   operationOnSum(3, 3, divideByHalf); // Outputs 3
 
 // yasarinBoyuksirketi(4, muradinCombayini); // Outputs 14
+
+
+
+// function A(callback){
+//   
+//     if(a){
+//         console.log('Men A funksiyasiyam');
+//     }else{
+//         callback()
+//     }
+
+// }
+
+// var B = function(){
+//     console.log('Men B funksiyasiyam');
+// }
+
+// var C = function(){
+//     console.log('Men C funksiyasiyam');
+// }
+
+
+
+// A(B)
+
+
+// function Cixma(veremeGonderilenReqem){
+//     return veremeGonderilenReqem - 10
+// }
+
+// function umumiHesabla(num,myCallBack){
+//     var sum = 15 + num
+
+//     var vedresindenGelenNetice = myCallBack(sum)
+//     console.log(vedresindenGelenNetice);
+// }
+
+// umumiHesabla(100, Cixma)
+
+// function xanim(e){
+//     console.log('Xanimi Cagirdi');
+// }
+
+// // function murad(){
+
+// //     console.log('MuradiCagirdi');
+// // }
+
+// // setTimeout(xanim, 1000)
+
+// window.onkeydown = xanim
+

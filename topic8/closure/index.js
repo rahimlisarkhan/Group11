@@ -30,17 +30,17 @@
 //       return x + y;
 //     };
 //   }
-  
+
 //   var add5 = makeAdder(5);
 //   var add10 = makeAdder(10);
-  
+
 //   console.log(add5(2));  // 7
 //   console.log(add10(2)); // 12
 
 
 // function counter (){
 //     var count = 0
-    
+
 //     return function(){
 //         return count++
 //     }
@@ -86,3 +86,69 @@
 
 // console.log(muradinSaygaci());
 // console.log(muradinSaygaci());
+
+
+
+// let a = 5
+
+// console.log('onceki', a);
+
+
+
+// function sum(){
+//    var a = 2
+
+//     console.log(a);
+
+//     function daxili(){
+//         // let a = 7
+//         console.log(a);
+//     }
+
+//     // daxili()
+
+// }
+
+// sum()   
+
+
+var azaldan = document.querySelector('#closureMinus')
+var artiran = document.querySelector('#closurePlus')
+var countArea = document.querySelector('#countArea')
+var sebetCount = document.querySelector('#sebetCount')
+
+
+function useState() {
+
+    let count = 0
+
+    function setCount(operator) {
+        if (count <= 0) {
+            count = 0
+        }
+
+        if (operator === 'plus') {
+            return count++
+        } else if (operator === 'minus') {
+            return count--
+        }
+    }
+
+    return setCount
+}
+
+let mehsullarUcun = useState()
+
+azaldan.addEventListener('click', function () {
+    let netice = mehsullarUcun('minus')
+    countArea.innerHTML = netice
+    sebetCount.innerHTML = netice
+
+})
+
+artiran.addEventListener('click', function () {
+    let netice = mehsullarUcun('plus')
+    sebetCount.innerHTML = netice
+    countArea.innerHTML = netice
+
+})
