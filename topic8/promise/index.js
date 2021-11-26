@@ -67,7 +67,6 @@ let myPromise = new Promise( (resolve, reject) => {
 })
 
 
-
 myPromise.then((res) => {
         var arrayInfo = res.cavab.data.employee
         render(arrayInfo)
