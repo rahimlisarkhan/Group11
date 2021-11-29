@@ -73,35 +73,58 @@
 //     })
 
 
-function showMovie(obj) {
+// function showMovie(obj) {
 
-    console.log('show funk icindedi', obj);
-    let filmCard = document.querySelector('#filmCard')
+//     console.log('show funk icindedi', obj);
+//     let filmCard = document.querySelector('#filmCard')
 
-    filmCard.innerHTML = `
-                <img src=${obj.Poster} alt="Titanic">
-                <p>Adi ${obj.Title}</p>
-                <p>Ili${obj.Year}</p>
-                <p>Ugurlari ${obj.Awards === "N/A" ? 'Yoxdur' : obj.Awards }</p>
-    `
-}
+//     filmCard.innerHTML = `
+//                 <img src=${obj.Poster} alt="Titanic">
+//                 <p>Adi ${obj.Title}</p>
+//                 <p>Ili${obj.Year}</p>
+//                 <p>Ugurlari ${obj.Awards === "N/A" ? 'Yoxdur' : obj.Awards }</p>
+//     `
+// }
 
-function errorInfo(err) {
-    let searchMovie = document.querySelector("#notMovie")
-    searchMovie.innerHTML = err
-}
-
-
+// function errorInfo(err) {
+//     let searchMovie = document.querySelector("#notMovie")
+//     searchMovie.innerHTML = err
+// }
 
 
-function render() {
-    let valueMovie = document.querySelector('#valueMovie')
-    let searchMovie = document.querySelector('#searchMovie')
 
-    searchMovie.addEventListener('click', function () {
-        getMovie(valueMovie.value)
 
-    })
-}
+// function render() {
+//     let valueMovie = document.querySelector('#valueMovie')
+//     let searchMovie = document.querySelector('#searchMovie')
 
-render()
+//     searchMovie.addEventListener('click', function () {
+//         getMovie(valueMovie.value)
+
+//     })
+// }
+
+// render()
+
+// let movieName = 'Lucy'
+// let url = `http://www.omdbapi.com/?apikey=7f267504&t=${movieName}`
+
+// let data = null
+
+// let response = fetch(url)
+
+// console.log(response);
+ 
+
+
+// response
+// .then((res)=>res.json())
+// .then((film)=>{
+//     data= film
+// })
+
+
+
+// document.querySelector('#goster').addEventListener('click',()=>{
+//     console.log(data);
+// })

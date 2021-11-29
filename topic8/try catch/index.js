@@ -16,10 +16,17 @@
 // }
 
 
-(
+// (
 
-function() {
-    console.log('test');
+// function() {
+//     console.log('test');
+// }
+
+// )()
+
+Array.prototype.uzunluguDe = function(){
+    console.log('Bu arraydeyin uzunugu', this.length);
 }
 
-)()
+let arr = [1,2,3]
+arr.uzunluguDe()

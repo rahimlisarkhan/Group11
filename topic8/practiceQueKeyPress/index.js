@@ -69,7 +69,7 @@ class Question extends ReactComponent{
         }
 
         this.suallarTitle.innerHTML = this.suallar[this.sualIndexsi].desc
- this.suallarTitle.style.color='red'
+        this.suallarTitle.style.color='red'
         this.suallarinVariants.innerHTML = this.suallar[this.sualIndexsi].answers.map((q,i)=> {
         return `<span>${i+1}) ${q}</span> `
         

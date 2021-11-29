@@ -210,3 +210,137 @@
 // }
 
 
+
+// class Yirticilar{
+
+//     firstName="John"
+
+//     constructor(a){
+//         console.log('Yaradildi');
+//         this.firstName = a
+//     }
+
+//     ovlan(name){
+//         this.firstName = name
+
+//         this.kimVar()
+//     }
+
+//     filter(){
+//         console.log('adi',this.firstName);
+//     }
+
+// }
+
+// let qartal = new Yirticilar("Qartal")
+
+// console.log(qartal);
+// let myObj = {
+
+//     firstName:"John",
+
+//     map:function(name){
+//         this.firstName = name
+
+//         this.kimVar()
+//     },
+
+//     filter:function(){
+//         console.log('adi',this.firstName);
+//     }
+
+// }
+
+// myObj.goster("Marry");
+
+
+
+// class Heyvanlar{
+//     qidasi = "Et yeyen"
+//     omru = "10il" 
+
+//     ovlan(){
+//         console.log('Ovlananda gozunun yasina baxmir');
+//     }
+// }
+
+
+// class Yirticilar extends Heyvanlar{
+//     qidasi = "Baliq yeyen"
+//     cinsi="Pisikkimiler"
+//     // omru = "10il" 
+
+//     // constructor(){
+//     //     super()
+//     //     this.omru = "40"
+//     // }
+
+  
+// }
+
+
+
+// class Aslan extends Yirticilar{
+//     constructor(a){
+//         super()
+//         this.omru = 50
+//     }
+// }
+
+// let peleng = new Aslan()
+
+// console.log(peleng);
+
+// let aslan = new Aslan()
+
+// console.log(aslan);
+
+// class Acount{
+//     #money = 0
+//     _id = 0
+//     //getter
+//     get pul(){
+//         return this.#money
+
+//     }
+
+//     //setter
+//     set pul(a){
+//         if(a < 0){
+//             alert('das')
+//             return
+//         }
+
+//          this.#money = a
+//     }
+
+// }
+
+// let hesab = new Acount()
+
+// hesab.pul = 20
+
+// console.log(hesab.pul);
+
+
+// class Home{
+
+//     fullName='John'
+
+// }
+
+// let a = new Home()
+
+// console.log(a.fullName);
+
+
+// class Home{
+//    static fullName ='John'
+//    surName = "Doe"
+
+//    static sayHello(){
+//        console.log("Hello",this.fullName);
+//    }
+// }
+
+
