@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Document</title>
+  <title>Document</title>
 
-    <style> 
+  <!-- <style> 
         #panel, #flip {
           padding: 5px;
           text-align: center;
@@ -20,14 +21,29 @@
           padding: 50px;
           display: none;
         }
-        </style>
+        </style> -->
 </head>
+
 <body>
 
-    <!-- <div id="flip">Click to slide down panel</div> -->
-    <!-- <div id="panel">Hello world!</div> -->
-    <p id="title">asadssa</p>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./index.js"></script>
+  <!-- <div id="flip">Click to slide down panel</div> -->
+  <!-- <div id="panel">Hello world!</div> -->
+  <!-- <p style="display:none;" id="title">asadssa</p> -->
+
+  <div class="hereket" style="position:absolute;top:0; left:0">
+    <img width="200"
+      src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+  </div>
+
+  <div style="margin-top:200px; position:absolute; top:50%;">
+    <button class="fade top">top</button>
+    <button class="fade bottom">bottom</button>
+    <button class="fade left">left</button>
+    <button class="fade right">right</button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./index.js"></script>
 </body>
+
 </html>

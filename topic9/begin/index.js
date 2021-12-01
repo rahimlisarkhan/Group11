@@ -31,9 +31,9 @@ $(document).ready(function(){
 
 // $('p').before(yenielemt)
 
-let pDeyeri = $('p').html()
+// let pDeyeri = $('p').html()
 
-console.log(pDeyeri);
+// console.log(pDeyeri);
 
 
 
@@ -60,4 +60,51 @@ console.log(pDeyeri);
 
 //   $.each(drinkList, function(index, el){
 //     drinkDiv.append("<div>" + el + "</div>")
+
+  // $('p').css({
+  //   height: 100,
+  //   backgroundColor:'red'
+
+  // })
+
+  $(document).on('click','.fade',function(){
+
+    let qutu = $('.hereket')
+
+    // $(this).css({backgroundColor:'red'})  
+      if($(this).hasClass('top')){
+        console.log('Top eledin');
+        qutu.animate({
+          top:-10
+        },2000,function(){console.log('Animasiya bitdi')})
+      }
+
+      if($(this).hasClass('bottom')){
+        console.log('Bottom eledin');
+           qutu.animate({
+          top:'+=250px'
+        },2000,function(){console.log('Animasiya bitdi')})
+      }
+
+      if($(this).hasClass('right')){
+        qutu.animate({
+          left:'+=250px'
+        },2000,function(){console.log('Animasiya bitdi')})
+      }
+
+      if($(this).hasClass('left')){
+        console.log('Left eledin');
+        qutu.animate({
+          left:'-=10px'
+        },2000,function(){console.log('Animasiya bitdi')})
+      }
+
+      console.log(this);
+
+  })
+
+
+
+
+
   });
