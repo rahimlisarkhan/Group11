@@ -5,6 +5,8 @@ $(document).ready(function(){
         elementSecondNum = $('.secondNum')
         elementOperatorNum = $('.userOperator')
         elementResultNum = $('.result')
+
+
     }
 
 
@@ -16,6 +18,7 @@ $(document).ready(function(){
 
         constructor() {
             super()
+            // this.elementFirstNum = a
         }
 
         numberCount(num){
@@ -53,23 +56,14 @@ $(document).ready(function(){
 
 
 
-    let calculate = new CalculatorApp()
+    let calculate = new CalculatorApp('#sdasa')
 
     calculate.logMonitoring()
 
 
-
     $(document).on('click', '.btn', function () {
         calculate.render($(this))
-    
 
     })
-
-
-
-
-
-
-
 
 })

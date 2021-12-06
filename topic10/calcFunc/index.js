@@ -13,7 +13,6 @@ let siralama = false
 let neticeniGor = ''
 
 
-
 function emeliyyat(e) {
     let duymeninDeyeri = e.value
 
