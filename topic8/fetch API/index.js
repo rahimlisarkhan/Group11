@@ -1,23 +1,23 @@
 // 7f267504
 
-// var apiUrl = `http://www.omdbapi.com/?apikey=7f267504&t=lusi`
+var apiUrl = `http://www.omdbapi.com/?apikey=7f267504&t=lusi`
 
-// var myPromise = fetch(apiUrl,{
-//   method:"GET",
-//   }) 
+var myPromise = fetch(apiUrl,{
+  method:"GET",
+  }) 
 
-// console.log('first',myPromise);
+console.log('first',myPromise);
 
-// myPromise.then((res)=>{
-//     myPromiseSecond = res.json()
-//     console.log('second promise',myPromiseSecond);
-//     return myPromiseSecond
-// }).then((data)=>{
-//     console.log(data);
-//     console.log(data);
-// }).catch((err)=>{
-//     console.log(err);
-// })
+myPromise.then((res)=>{
+    myPromiseSecond = res.json()
+    console.log('second promise',myPromiseSecond);
+    return myPromiseSecond
+}).then((data)=>{
+    console.log(data);
+    console.log(data);
+}).catch((err)=>{
+    console.log(err);
+})
 
 
 
