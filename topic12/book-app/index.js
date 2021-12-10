@@ -20,20 +20,19 @@ $(document).on('click', '.btn-book-search', function () {
 
 
 
-
-
 function getKitabiGetir(kitabAdi) {
 
     const settings = {
+        headers: {
+            "x-rapidapi-key": "9d9588302emsh58804fa5a30d4d9p1b947ajsn659ea6ae2269"
+        },
         url: `https://goodreads-books.p.rapidapi.com/search`,
         method: "GET",
         data:{
             q:kitabAdi,
             page:1
-        },
-        headers: {
-            "x-rapidapi-key": "9d9588302emsh58804fa5a30d4d9p1b947ajsn659ea6ae2269"
         }
+       
     };
 
     $.ajax(settings).then(function (response) {
