@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container d-none" id="usePanel">
 
-        <div class="jumbotron jumbotron-fluid bg-danger">
+        <div class="jumbotron jumbotron-fluid bg-secondary">
             <div class="container">
                 <h1 class="display-1 text-center text-white">Todo App</h1>
             </div>
@@ -26,31 +26,42 @@
         <table class="table table-hover table-danger" id="todoList">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col">Student ID</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Age</th>
                     <th scope="col">Job</th>
                 </tr>
             </thead>
             <tbody>
-               
             </tbody>
         </table>
 
 
-        <form class="mt-5 bg-danger text-white p-4">
+        <form class="my-5 bg-secondary text-white p-4">
+
             <div class="form-group">
-                <label for="exampleInputEmail1">Todo job</label>
-                <input type="text" class="form-control" id="todoArea" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1">Full Name</label>
+                <input type="text" class="form-control" id="todoFullName" aria-describedby="emailHelp">
             </div>
-            <button type="submit" id="submitBtn" class="btn btn-outline-light">Submit</button>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Job</label>
+                <input type="text" class="form-control" id="todoJob" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Age</label>
+                <input type="number" class="form-control" id="todoAge" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-outline-light btn-block">Submit</button>
         </form>
     </div>
 
-
-    <div class="content" id="imgContent" data-murad="telebe2" data-sekil='sekil unvani' data-gender='female'>
-        <!-- <h1>Sekil</h1>
-        <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" alt="Flower"> -->
+    <div class="container bg-danger pb-5" id="loginPanel" style="min-height: 100vh;">
+        <div class="form-group bg-white  pt-5">
+            <label for="">UserName</label>
+            <input type="text" id="loginUserName" class="form-control" placeholder="username" >
+            <button id="loginBtn" class="btn btn-outline-warning btn-block"> Login</button>
+        </div>
     </div>
-
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -60,7 +71,7 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 
-        <script src="./index.js"> </script>
+    <script src="./index.js"> </script>
 
 </body>
 

@@ -43,7 +43,7 @@ function bizeNormalSaatiGosteren(a) {
 
     let deqiqe = Math.floor(saniyeler / 60)
     let qaliqSaniyeler = saniyeler - (deqiqe * 60)
-
+    
     let result = `${deqiqe < 10 ? "0"+deqiqe : deqiqe}:${qaliqSaniyeler < 10 ? "0"+qaliqSaniyeler : qaliqSaniyeler}`
 
     return result
