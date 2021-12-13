@@ -39,8 +39,6 @@ $(document).ready(() => {
         e.preventDefault()
         let form = getFormInfo()
         getNews(form)
-
-    
     })
 
     // API 
