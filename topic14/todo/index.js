@@ -55,14 +55,14 @@ function render(arr) {
 function deleteitem(id) {
     console.log(id);
 
-    let newArray = students.filter(user => user.id !==id)
+    students = students.filter(user => user.id !==id)
 
-    console.log(newArray);
-    localStorage.setItem('users', JSON.stringify(newArray))
-    render(newArray)
+    localStorage.setItem('users', JSON.stringify(students))
+    render(students)
 }
 
-// setItemCookie("username","adminadmin")
+
+setItemCookie("username","adminadmin")
 
 document.querySelector("#loginBtn").addEventListener("click",function(){
     let userDeyeriCookie = getItemCookie("username")
