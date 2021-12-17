@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBRszLosmFHNfv0H4qzpxVjMYzmgd5XGqk",
-    authDomain: "todoapp-512ca.firebaseapp.com",
-    databaseURL: "https://todoapp-512ca-default-rtdb.firebaseio.com",
-    projectId: "todoapp-512ca",
-    storageBucket: "todoapp-512ca.appspot.com",
-    messagingSenderId: "74998074232",
-    appId: "1:74998074232:web:9c1187615194b10ccd168d"
+    apiKey: "AIzaSyDb9gJHdInzAe7zcU_LdAQoz9WiJsjPRO8",
+    authDomain: "testapp-cc335.firebaseapp.com",
+    databaseURL: "https://testapp-cc335-default-rtdb.firebaseio.com",
+    projectId: "testapp-cc335",
+    storageBucket: "testapp-cc335.appspot.com",
+    messagingSenderId: "909484413616",
+    appId: "1:909484413616:web:7e755affb3cc880bb46175"
 };
 
 // Initialize Firebase
@@ -14,8 +14,12 @@ firebase.initializeApp(firebaseConfig)
 
 let db = firebase.database();
 
-// let count = 0
+console.log(db);
 
+// let count = 0
+db.ref("/test").set({
+            count: 8888,
+        })
 
 //Database yazirma WRITE --------------------------------------------
 // document.querySelector('#go').onclick = function () {
