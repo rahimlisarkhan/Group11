@@ -10,7 +10,6 @@ $(document).ready(function () {
         appId: "1:870298862869:web:16e5426da347b2e252d51c"
     };
 
-    
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig)
 
@@ -20,7 +19,6 @@ $(document).ready(function () {
 
     //APP RUN
     getProducts()
-
 
     //ACTIONS
     $('#productSubmit').on('click', function (e) {
@@ -92,8 +90,6 @@ $(document).ready(function () {
 
     }
 
-
-
     //App Render
     function renderProductModal(obj) {
         $('#exampleModalLabel').html(obj.productTitle)
@@ -159,6 +155,5 @@ $(document).ready(function () {
 
         }
     })
-
 
 })
