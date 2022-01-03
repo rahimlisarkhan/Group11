@@ -1,0 +1,13 @@
+
+{
+    "personals":[
+        {
+            "full_name":"John",
+            "age":45
+        },
+        {
+            "full_name":"Marry",
+            "age":15
+        }
+    ]
+}
