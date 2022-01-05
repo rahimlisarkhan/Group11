@@ -1,0 +1,19 @@
+{
+    "footballer": [{
+            "full_name": "Salah",
+            "power": 95
+        },
+        {
+            "full_name": "Emreli",
+            "power": 82
+        },
+        {
+            "full_name": "Ronaldo",
+            "power": 99
+        },
+        {
+            "full_name": "Messi",
+            "power": 99
+        }
+    ]
+}
