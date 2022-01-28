@@ -1,20 +1,31 @@
 import './App.css';
 import { BrowserRouter, Route, Switch} from "react-router-dom"
 import Header from "./components/Header"
-import Home from "./feature/Home"
-import About from "./feature/About"
-import Product from "./feature/Product"
+import React, { Suspense } from 'react';
+
+
+
+const Home = React.lazy(()=>import("./feature/Home"));
+const About = React.lazy(()=>import("./feature/About"));
+const Product = React.lazy(()=>import("./feature/Product"));
+const Todo = React.lazy(()=>import("./feature/Todo"));
+const Contact = React.lazy(()=>import("./feature/Contact"));
 
 function App() {
-  
+
   return (
     <BrowserRouter>
+     <Suspense fallback={<div>Loading...</div>}>
       <Header/>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
         <Route exact path="/product" component={Product}/>
+        <Route exact path="/todo" component={Todo}/>
+        <Route exact path="/contact" component={Contact}/>
       </Switch>
+     </Suspense>
+     
     </BrowserRouter>
   );
 }

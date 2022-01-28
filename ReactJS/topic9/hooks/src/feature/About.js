@@ -1,8 +1,14 @@
-import {useEffect, useRef, useState } from "react";
+import {useEffect, useReducer, useRef, useState } from "react";
 import axios from "axios"
+import { homeReducer, initialHomeState } from "../store/reducers/home";
 
 
 export default function About(props) {
+
+    const [homeState,homeDispatch] = useReducer(homeReducer,initialHomeState)
+
+
+    console.log("about",homeState);
 
     let textInput = useRef();
 
@@ -51,7 +57,8 @@ export default function About(props) {
 
   
     return (
-        <>
+        <>  
+            <h1>Homedaki deyer {homeState.count}</h1>
             <input ref={textInput} onChange={handleChangeText} />
             <h1 style={{ color: changeColor ? "red" : "black" }}>About function page {count}</h1>
             <button onClick={increment}>Artirir</button>

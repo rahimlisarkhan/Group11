@@ -1,56 +1,44 @@
-import { Component } from "react";
+import {useEffect, useReducer, useState } from "react";
+import { Info } from "../components/Info";
+import { homeReducer, initialHomeState } from "../store/reducers/home";
 
-export default class Home extends Component {
 
-    constructor() {
-        super()
-        this.state = {
-            count: 0,
-            products: [],
-            open:false
-        }
 
-        this.increment = this.increment.bind(this)
+export default function Home() {
+
+    // const [todos, dispatch] = useReducer(reducer, initialTodos);
+
+    let  [count,setCount] = useState(0)
+
+    const [homeState,homeDispatch] = useReducer(homeReducer,initialHomeState)
+
+    useEffect(()=>{
+        getMovie()
+    },[])
+
+    console.log(homeState);
+
+    const increment = () =>{
+        setCount(prev=>prev+=1)
+        homeDispatch({type:"ARTIR",payload:count})
     }
 
-    shouldComponentUpdate(nextProps,nextState){
-        if(nextState.count !== this.state.count){
-            return true
-        }
-        return false
-
-    }
-    
-    componentDidMount(){
-        console.log("Sorgu atildi data geldi");
+    const decrement = () =>{
+        setCount(prev=>prev-=1)
+        homeDispatch({type:"AZALT",payload:count})
     }
 
-    componentWillUnmount(){
-        console.log("Sehifeden cixis olundu");
-    }
+    const getMovie = () =>{
 
-    componentDidUpdate(prevProps,prevState){
-        if(prevState.count !== this.state.count){
-            console.log("Count update olundu");
-        }
+        // homeDispatch({type:"GETPRODUCTS",payload:res.data.result})
     }
+    return (
+        <>
+            <h1>Home Page {homeState.count} </h1>
+            <button onClick={increment}>Artir</button>
+            <button onClick={decrement}>Azalt</button>
 
-    decrement(){
-        console.log("azaldi");
-    }
-
-    increment(){
-        this.setState({ count: this.state.count + 1 })
-    }
-
-    render() {
-        console.log(this.props);
-        console.log("render isledi");
-        return (
-            <>
-                <h1>Home Page {this.state.count}</h1>
-                <button onClick={this.increment}>Artir</button>
-            </>
-        )
-    }
+            <Info/>
+        </>
+    )
 }
