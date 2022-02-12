@@ -1,0 +1,30 @@
+[
+    {
+        "id":"001",
+        "title":"Big Tasty",
+        "raiting":5,
+        "price":7.9,
+        "img_url":"https://www.mcdonalds.com.mt/wp-content/uploads/2018/05/BigTasty-Classic.jpg"
+    },
+    {
+        "id":"002",
+        "title":"Cizburger",
+        "raiting":2,
+        "price":7.9,
+        "img_url":"https://mcdonalds.az/images/06f60bc8898a8bf0f8455beca0106fd0.png"
+    },
+    {
+        "id":"003",
+        "title":"Royal Ciz",
+        "raiting":3.5,
+        "price":7.9,
+        "img_url":"https://mcdonalds.az/images/dd3e42c5a57e344b782ea0cce78f2bfd.png"
+    },
+    {
+        "id":"004",
+        "title":"Pizza",
+        "raiting":4.5,
+        "price":2.9,
+        "img_url":"https://pizzamizza.az/upload/resize_cache/iblock/05c/254_254_2/05c1187c21bea988b38e31089dfec366.jpg?161761730265933"
+    }
+]
