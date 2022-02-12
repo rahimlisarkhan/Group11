@@ -1,48 +1,91 @@
 import React from 'react';
-import { Formik, Form, Field,ErrorMessage  } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from "yup";
 
 export class FormikReact extends React.Component {
-    
-    myInitialValues = { username: '', password: '',email:'',file:"" }
+
+    myInitialValues = { username: '', password: '', email: '', }
     SingValidator = Yup.object().shape({
         username: Yup.string()
-          .min(4, 'Too Short!')
-          .max(10, 'Too Long!')
-          .required('Required'),
+            .min(4, 'Too Short!')
+            .max(10, 'Too Long!')
+            .required('Required'),
         password: Yup.string()
-          .min(8, 'Too Short!')
-          .max(15, 'Too Long!')
-          .required('Required'),
+            .min(8, 'Too Short!')
+            .max(15, 'Too Long!')
+            .required('Required'),
         email: Yup.string()
-          .email('Invalid email')
-          .required('Required'),
-      });
+            .email('Invalid email')
+            .required('Required'),
+    });
 
-    constructor(){
+    constructor() {
         super()
 
         this.state = {
-            netice:null
+            netice: null
         }
     }
 
-    myOnSubmit(formum){
+    myOnSubmit(formum, props) {
         console.log(formum);
-        this.setState({ netice:formum})
+        props.resetForm()
+        // this.setState({ netice:formum})
     }
 
     render() {
 
-        console.log("Yene isledi");
         return (
             <div>
                 <h1>My Form</h1>
                 <Formik
-                    validationSchema={this.SingValidator}
+                    // validationSchema={this.SingValidator}
                     initialValues={this.myInitialValues}
                     onSubmit={this.myOnSubmit}>
-                    <Form>
+
+                    {(props) => {
+                        return (
+                            <Form>
+                                <Field type="text" name="username" placeholder="username" />
+                                <ErrorMessage name="username" style={{ color: "red" }} component="div" />
+                                <br />
+                                <Field type="password" name="password" placeholder="password" />
+                                <ErrorMessage name="password" component="div" />
+                                <br />
+                                <Field type="email" name="email" placeholder="email" />
+                                <ErrorMessage name="email" component="div" />
+                                
+                                <br />
+                                <br />
+                                
+                                <div className="form-image-group">
+                                    <input id='dowloadImage' type="file" onChange={(e)=>{
+                                        props.setFieldValue("img_file",e.target.files[0]);
+                                    }} />
+                                    <label htmlFor='dowloadImage'>Yukle</label>
+                                </div>
+                                
+                                <br />
+
+                                <button type='submit'>Send</button>
+                            </Form>
+                        )
+                    }}
+
+                </Formik>
+            </div>
+
+        )
+    }
+}
+
+{/* <input type="file" name="photoFile" onChange={(event) => {
+    const files = event.target.files;
+    props.setFieldValue("photoFile", files[0]);
+}} /> */}
+
+
+{/* <Form>
                         <Field type="text" name="username" placeholder="username" />
                         <ErrorMessage name="username" style={{color:"red"}} component="div" />
                         <br/>
@@ -52,14 +95,10 @@ export class FormikReact extends React.Component {
                         <Field type="email" name="email" placeholder="email" />
                         <ErrorMessage name="email" component="div" />
                         <br/>
-                        <Field type="file" name="file" placeholder="email" />
+                        <input type="file" name="photoFile"  onChange={(event) => {
+                                const files = event.target.files;
+                                formik.setFieldValue("photoFile", files[0]);
+                }}  />
 
                         <button type='submit'>Send</button>
-                    </Form>
-                </Formik>
-            </div>
-            
-        )
-    }
-}
-
+                    </Form> */}

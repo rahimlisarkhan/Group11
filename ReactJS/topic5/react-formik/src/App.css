@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+.form-image-group input{
+  display: none;
+
+}
+
+.form-image-group label{
+  background-color: pink;
+  padding:15px;
+  border-radius:40px;
+}

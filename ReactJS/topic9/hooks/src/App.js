@@ -11,7 +11,7 @@ const Product = React.lazy(()=>import("./feature/Product"));
 const Todo = React.lazy(()=>import("./feature/Todo"));
 const Contact = React.lazy(()=>import("./feature/Contact"));
 
-function App() {
+function App(props) {
 
   return (
     <BrowserRouter>

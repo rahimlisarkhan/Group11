@@ -31,6 +31,7 @@ const Header = (props) => {
 
     const handleCloseNavMenu = (href) => {
         setAnchorElNav(null);
+
         props.history.push(href)
     };
 
@@ -50,7 +51,8 @@ const Header = (props) => {
                     >
                         LOGO
                     </Typography>
-
+                    
+                    {/* For Mobile */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -108,6 +110,12 @@ const Header = (props) => {
                             sx={{ my: 2, color: 'white', display: 'block' }}
                         >
                             About
+                        </Button>
+                        <Button
+                            onClick={() => handleCloseNavMenu("/product")}
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                            Product
                         </Button>
                     </Box>
 

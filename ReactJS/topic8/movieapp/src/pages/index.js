@@ -7,7 +7,6 @@ import { route } from "../util/route"
 
 
 export class RootPage extends Component {
-
     render() {
         return (
             <Fragment>

@@ -1,0 +1,33 @@
+import './App.css';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { About } from './page/About';
+import { Home } from './page/Home';
+import { store } from './store/index'
+import { Provider } from 'react-redux'
+
+
+function App() {
+
+
+  return (
+    <BrowserRouter>
+      <Provider store={store}>
+        <div>
+          <Link to="/">
+            Home
+          </Link>
+          <Link to="/about">
+            About
+          </Link>
+        </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+      </Provider>
+
+    </BrowserRouter>
+  );
+}
+
+export default App;
