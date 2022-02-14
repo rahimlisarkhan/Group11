@@ -3,7 +3,6 @@ import Head from "next/head"
 import { AboutTitle } from "../../feature/about/components/AboutTitle"
 
 
-
 const AboutPage = () => {
     return (
         <>
