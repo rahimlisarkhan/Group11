@@ -6,8 +6,6 @@ const ProductSlugPage = (props) => {
 
     let { query } = useRouter()
 
-    console.log(props);
-
     return (
         <>
             {/* <h1>Product Slug Page {query.slug}</h1> */}
@@ -24,7 +22,6 @@ export default ProductSlugPage
 
 export const getServerSideProps = async (context) => {
 
-    console.log(context.query);
     let res = await getMovieSlug(context.query.slug)
 
     return {

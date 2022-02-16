@@ -8,7 +8,6 @@ const MoviePage = (props) => {
 
     let router = useRouter()
 
-    console.log(props);
 
     return (
         <>

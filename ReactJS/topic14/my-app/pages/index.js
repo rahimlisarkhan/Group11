@@ -7,8 +7,6 @@ import styles from '../styles/Home.module.css'
 
 const Home = (props) => {
 
-  console.log(props);
-
   // useEffect(()=>{
 
   //   getJokes()

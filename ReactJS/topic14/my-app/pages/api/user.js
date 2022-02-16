@@ -3,6 +3,7 @@
 const userAPI = (req,res) =>{
 
     if(req.method === "GET"){
+        let data = db.on("user")
         return res.json({status:200,result:{full_name:"Murad Isgenderli"}})
     }
 
